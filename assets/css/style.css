@@ -1,0 +1,131 @@
+ 
+ :root{
+
+
+--Orange: hsl(26, 100%, 55%);
+--Pale-orange: hsl(25, 100%, 94%);;
+
+
+
+--Very-dark-blue: hsl(220, 13%, 13%);
+--Dark-grayish-blue: hsl(219, 9%, 45%);
+--Grayish-blue: hsl(220, 14%, 75%);
+--Light-grayish-blue: hsl(223, 64%, 98%);
+--White: hsl(0, 0%, 100%);
+--Black: hsl(0, 0%, 0%)
+
+ }
+ 
+ 
+ .nav-item .nav-link:hover{
+    color: red ;
+    
+    
+}
+*,*::before,*::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'kumbs';
+    src: url(../fonts/KumbhSans-Regular.woff2);
+}
+html{
+    font-size: 15px;
+}
+.smallAvatar{
+    width:35px;
+    height:35px;
+}
+
+.row{
+  
+    max-width: 800px;
+}
+h1{
+    margin-top: 1.5em;
+    font-size: .7rem;
+    font-weight: 500;
+}
+h2{
+    font-weight: 700;
+    margin-bottom: 1em;
+}
+p{
+    font-size: .9rem;
+    margin-bottom: 2em;
+}
+.perc{
+    background-color: black;
+    color: white;
+    padding: 0 .5em;
+    font-size: .8em;
+    opacity: 60%;
+}
+.amount{
+    font-weight: 700;
+    font-size: 1.6em
+}
+.slashedCost{
+
+    opacity: 75%;
+}
+
+.calc{
+   
+    border-radius: .3em;
+    background-color: var(--Light-grayish-blue);
+    padding: .5em 0;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+.calc span:hover{
+    cursor:pointer;
+}
+.shoe-avatar{
+    max-width: 4em;
+
+}
+.shoe-avatar:hover{
+    cursor: pointer;
+}
+.cartBtn {
+    color: black;
+    background-color: var(--Orange);
+    border: none;
+}
+.cartBtn:hover{
+    background-color: white;
+    border: 1px solid red;
+    color:black;
+}
+.cartBtn span{
+    margin-right: .5em;
+}
+.cart-container{
+    border: 1px solid;
+    position: absolute;
+    top: 3.5em;
+    right: 5em;
+    max-width: 40em;
+    padding-inline: 2em;
+    display: none;
+    z-index: 999;
+    color: white;
+    background-color: black;
+
+}
+.cart-container.active{
+    display: block;
+}
+/* .container{
+    z-index: -1;
+} */
+.cart:hover{
+    cursor: pointer;
+}
+#prodImg img{
+    max-width: 3em;
+ 
+}
